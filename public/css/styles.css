@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: black;
+}
+
+@font-face {
+    font-family: 'poly';
+    src: url('.\public\font\Poly-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('/fonts/MyFont-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.body{
+    height: 100%;
+    background-img: black;
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+    background-color: #000;
+    transition: transform .6s ease;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: -10;
+}
+
+.header{
+    top: o;
+    left: o;
+    width: 100%;
+    background: transparent;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.containerhead{
+    background: transparent;
+    width:112vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    background: transparent;
+    justify-self: flex-start;
+}
+.Logo img{
+    background: transparent;
+    justify-self: flex-start;
+    width: 200px;
+}
+
+.bg video{
+    width: 100%;
+
+}
+
+.navbar{
+    background: transparent;
+}
+
+.navbar a {
+    background: transparent;
+    font-family: 'poppins' ;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+}
+
+.navbar a:hover{
+    color: brown ;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    
+    height: 3px;
+    
+    transition: all .5s;
+}
+
+
+
+.homepg{
+    position: relative;
+    align-content: center;
+}
+
+.textintro{
+    position: absolute;
+    font-size: 32px;
+    color: #fff;
+}
+
+.secondpg{
+    position: relative;
+}
+
+.intro{
+    position: absolute;
+    top: 400px;
+    width: 1500px;
+    left:122px;
+}
+
+.mbah{
+    padding: 0px;
+}
+
+.mbah img{
+    position: absolute;
+    right: 0px;
+}

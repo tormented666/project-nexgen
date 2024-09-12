@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexgen Projekt</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <script type="text/javascript" src="\script.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+
+    <header>
+        <nav class="">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="/src/home.html">
+                            <img class="w-[200px]" src="\public\css\nexgen.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-4">
+                        <a href="/src/home.html" class="text-white hover:text-amber-500">Home</a>
+                        <a href="/src/gallery.html" class="text-white hover:text-amber-500">Gallery</a>
+                        <a href="/src/about.html" class="text-white hover:text-amber-500">About</a>
+                    </div>
+
+                    <!-- Mobile Menu Button (Burger Icon) -->
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <a href="/src/home.html" class="block px-4 py-2 text-white hover:text-amber-500">Home</a>
+                <a href="/src/gallery.html" class="block px-4 py-2 text-white hover:text-amber-500">Gallery</a>
+                <a href="/src/about.html" class="block px-4 py-2 text-white hover:text-amber-500">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        // Toggle mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+  
+    <!-- <header>
+        <nav class="header border-b-4">
+
+            <div class="containerhead">
+                <div class="Logo">
+                    <img src="\public\css\nexgen.png">
+                </div>
+
+                <div class="navbar">
+                    <a href="/src/home.html">Home</a>
+                    <a href="/src/gallery.html">Gallery</a>
+                    <a href="/src/about.html">About</a>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+    <!-- Showcase Section -->
+    <div class="relative mb-36 mx-auto p-4">
+        <!-- Bagian atas (3 gambar) -->
+        <div class="text-white  text-center uppercase font-poly lg:text-4xl md:text-[24px] sm:text-[20px]">BATIK JAWA TIMUR</div>
+        <div class="grid grid-cols-1 sm: md:grid-cols-3 space-y-10 mb-4">
+
+            <div class="mt-10 p-5 hover:border">
+                <a href="/src/Banyuwangi.html">
+                <img src="/public/Jawa Timur/Batik Banyuwangi.png" alt="Mega Mendung" class="w-full h-auto">
+                </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Banyuwangi</p>
+            </div>
+            <div class="p-5 hover:border">
+                <a href="/src/Madura.html">
+                <img src="/public/Jawa Timur/Batik Madura.png" alt="Mega Mendung" class="w-full h-auto">
+                </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Madura</p>
+            </div>
+            <div class="p-5 hover:border">
+                <a href="/src/Ponorogo.html">
+                <img src="/public/Jawa Timur/Batik Ponorogo.png" alt="Mega Mendung" class="w-full h-auto">
+                </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Ponorogo</p>
+            </div>
+        </div>
+
+        <!-- Bagian bawah (1 gambar besar) -->
+        <div class="hover:border">
+            <a href="/src/Jomokerto.html">
+            <img src="/public/Jawa Timur/Batik Jomokerto Horizontal.png" alt="Mega Mendung" class="w-full h-auto">
+            </a>
+            <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Mojokerto</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="relative mb-36 mx-auto p-4">
+        <!-- Bagian atas (3 gambar) -->
+        <div class="text-white text-center uppercase font-poly lg:text-4xl md:text-[24px] sm:text-[20px]">BATIK JAWA TENGAH</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 space-y-10 mb-4">
+
+            <div class="mt-10 p-5 hover:border">
+                <a href="/src/salatiga.html">
+                <img src="/public/Jawa Tengah/Batik Salatiga.png" alt="Mega Mendung" class="w-full h-auto">
+            </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Salatiga</p>
+            </div>
+            <div class="p-5 hover:border">
+                <a href="/src/solo.html">
+                <img src="/public/Jawa Tengah/Batik Solo.png" alt="Mega Mendung" class="w-full h-auto">
+            </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Solo</p>
+            </div>
+            <div class="p-5 hover:border">
+                <a href="/src/jogja.html">
+                <img src="/public/Jawa Tengah/Batik Jogja.png" alt="Mega Mendung" class="w-full h-auto">
+                </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Jogja</p>
+            </div>
+        </div>
+
+        <!-- Bagian bawah (1 gambar besar) -->
+        <div class="hover:border">
+            <a href="/src/pekalongan.html">
+            <img src="/public/Jawa Tengah/Batik Pekalongan Horizontal.png" alt="Mega Mendung" class="w-full h-auto">
+        </a>
+            <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Pekalongan</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="relative mb-36 mx-auto p-4">
+        <!-- Bagian atas (3 gambar) -->
+        <div class="text-white text-center uppercase font-poly lg:text-4xl md:text-[24px] sm:text-[20px]">BATIK JAWA BARAT</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 space-y-10 mb-4">
+
+            <div class="mt-10 p-5 hover:border">
+                <a href="/src/ciamis.html">
+                <img src="/public/Jawa Barat/Batik Ciamis.png" alt="Mega Mendung" class="w-full h-auto">
+                </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Ciamis</p>
+            </div>
+            <div class="p-5 hover:border">
+                <a href="/src/garut.html">
+                <img src="/public/Jawa Barat/Batik Garut.png" alt="Mega Mendung" class="w-full h-auto">
+                </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Garut</p>
+            </div>
+            <div class="p-5 hover:border">
+                <a href="/src/tasikmalaya.html">
+                <img src="/public/Jawa Barat/Batik Tasikmalaya.png" alt="Mega Mendung" class="w-full h-auto">
+            </a>
+                <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Tasikmalaya</p>
+            </div>
+        </div>
+
+        <!-- Bagian bawah (1 gambar besar) -->
+        <div class="hover:border">
+            <a href="/src/cirebon.html">
+            <img src="/public/Jawa Barat/Batik Cirebon Horizontal.png" alt="Mega Mendung" class="w-full h-auto">
+        </a>
+            <p class="text-center py-2 text-white lg:text-2xl md:text-[15px] sm:text-[10px] font-poly">Batik Cirebon</p>
+        </div>
+    </div>
+    </div>
+
+    <div class=" mx-auto py-8">
+        <div class="flex flex-col items-center justify-center">
+            <div class="border-t border-white w-full my-6"></div>
+            <img src="/public/css/nexgen.png" alt="" class="w-96">
+            <div class="flex mt-4 space-x-6">
+                <a href="/src/about.html" class="hover:underline text-white ">About Us</a>
+            </div>
+            <div class="mt-4 text-gray-500 text-sm">
+                © NexGen Est. 2024
+            </div>
+        </div>
+    </div>
+</body>
+</html>

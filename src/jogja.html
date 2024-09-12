@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batik Pekalongan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header>
+        <nav class="">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="/src/home.html">
+                            <img class="w-[200px]" src="\public\css\nexgen.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-4">
+                        <a href="/src/home.html" class="text-white hover:text-amber-500">Home</a>
+                        <a href="/src/gallery.html" class="text-white hover:text-amber-500">Gallery</a>
+                        <a href="/src/about.html" class="text-white hover:text-amber-500">About</a>
+                    </div>
+
+                    <!-- Mobile Menu Button (Burger Icon) -->
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <a href="/src/home.html" class="block px-4 py-2 text-white hover:text-amber-500">Home</a>
+                <a href="/src/gallery.html" class="block px-4 py-2 text-white hover:text-amber-500">Gallery</a>
+                <a href="/src/about.html" class="block px-4 py-2 text-white hover:text-amber-500">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        // Toggle mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="p-6">
+        <a href="/src/gallery.html" class="text-white hover:text-amber-500">Back</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="p-6 flex">
+        <!-- Left Side: Text Content -->
+        <div class="w-1/2">
+            <h1 class="text-5xl font-bold mb-4">BATIK JOGJA</h1>
+            <p class="text-md mb-6">Mengadopsi bentuk buah kawung yang dibelah menjadi empat dan menunjuk ke empat arah. Motif batik ceplok kerap disebut sebagai batik ceplokan.
+                Motif batik ini, termasuk dalam jenis motif batik kuno, yang sudah ada sejak zaman Kerajaan Mataram. Polanya memiliki ciri khas bentuk dasar geometri, seperti persegi, oval maupun bintang, yang disusun melingkar sehingga menyerupai sekuntum bunga dengan pola simetris.
+                Makna motif batik ceplok adalah menggambarkan suratan takdir dan
+                keteraturan kehidupan. Pemakai motif batik ceplok diharapkan menjalani hidup
+                secara tenang dan teratur, sehingga dulunya banyak digunakan oleh aparatur
+                pemerintah.
+                Terdapat sejumlah variasi motif batik ceplok, seperti motif batik ceplok kawung, ceplok kesatrian, ceplok Sriwedari, ceplok grompol, dan sebagainya.</p>
+        </div>
+
+        <!-- Right Side: Empty Content/Placeholder for Image -->
+        <div class="w-1/2 border-l border-gray-700">
+            <!-- Placeholder for future content, can be an image or other -->
+            <img src="/public/Jawa Tengah/Jogjas.png">
+        </div>
+    </main>
+</body>
+</html>

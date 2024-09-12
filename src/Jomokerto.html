@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batik Pekalongan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header>
+        <nav class="">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="/src/home.html">
+                            <img class="w-[200px]" src="\public\css\nexgen.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-4">
+                        <a href="/src/home.html" class="text-white hover:text-amber-500">Home</a>
+                        <a href="/src/gallery.html" class="text-white hover:text-amber-500">Gallery</a>
+                        <a href="/src/about.html" class="text-white hover:text-amber-500">About</a>
+                    </div>
+
+                    <!-- Mobile Menu Button (Burger Icon) -->
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <a href="/src/home.html" class="block px-4 py-2 text-white hover:text-amber-500">Home</a>
+                <a href="/src/gallery.html" class="block px-4 py-2 text-white hover:text-amber-500">Gallery</a>
+                <a href="/src/about.html" class="block px-4 py-2 text-white hover:text-amber-500">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        // Toggle mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="p-6">
+        <a href="/src/gallery.html" class="text-white hover:text-amber-500">Back</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="p-6 flex">
+        <!-- Left Side: Text Content -->
+        <div class="w-1/2">
+            <h1 class="text-5xl font-bold mb-4">BATIK MOJOKERTO</h1>
+            <p class="text-lg mb-6">Batik Mojokerto merupakan sebuah budaya kerajinan batik yang sejarahnya berkembang dengan masa kejayaan Kerajaan Majapahit. Keunikan batik Mojokerto adalah pada nama-nama coraknya yang sangat asing dan aneh di telinga sebagian orang. Misalnya gedeg rubuh, matahari, mrico bolong, pring sedapur, grinsing, atau surya majapait. Batik Mojokerto kini memiliki 6 motif yang telah dipatenkan, yakni pring sedapur, mrico bolong, sisik gringsing, koro renteng, rawan indek dan matahari.
+                Desain batik itu Mojokerto mengambil corak alam sekitar kehidupan manusia. Misalnya motif pring sedapur merupakan gambar rumpun bambu dengan daun-daun menjuntai. Ada burung merak bertengger. Warna dasarnya putih dengan batang bambu warna biru. Sedangkan daunnya warna biru dan hitam. Demikian pula motif gedeg rubuh, coraknya mirip seperti anyaman bambu yang miring. Kalau mrico bolong, motifnya berupa bulatan merica berlubang.</p>
+
+        </div>
+
+        <!-- Right Side: Empty Content/Placeholder for Image -->
+        <div class="w-1/2 border-l border-gray-700">
+            <!-- Placeholder for future content, can be an image or other -->
+            <img src="/public/Jawa Timur/Jomokertos.png">
+        </div>
+    </main>
+</body>
+</html>
